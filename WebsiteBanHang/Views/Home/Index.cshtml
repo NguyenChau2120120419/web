@@ -4,27 +4,35 @@
 }
 
 <div class="hero-slide owl-carousel site-blocks-cover">
-    <div class="intro-section" style="background-image: url('~/Content/images/hero_1.jpg'); ">
-        <div class="container">
-
-            <div class="row align-items-center">
-                <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
-                    <h1>Academics University</h1>
-                </div>
-            </div>
-        </div>
-    </div>
- 
-    <div class="intro-section" style="background-image: url('~/Content/images/hero_1.jpg');">
+    <div class="intro-section" style="background-image: url('/Content/images/banner1.png');">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
-                    <h1>You Can Learn Anything</h1>
+                    <h1>Thương Hiệu Laptop</h1>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="intro-section" style="background-image: url('/Content/images/banner3.png');">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
+                    <h1>Sản Phẩm iPhone</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="intro-section" style="background-image: url('/Content/images/banner2.png');">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
+                    <h1>Thương Hiệu Nổi Tiếng</h1>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
@@ -98,7 +106,7 @@
                     {
                         <div class="course-1-item">
                             <figure class="thumnail">
-                                <a href="@Url.Action("Detail", "Product", new { @id = item.Id })"><img src="~/Content/images/course_1.jpg" alt="Image" class="img-fluid"></a>
+                                <a href="@Url.Action("Detail", "Product", new { @id = item.Id })"><img src="~/Content/images/@item.Avatar" height="280" width="150"></a>
                                 <div class="price">@item.Price$</div>
                                 <div class="category"><h3>@item.Name</h3></div>
                             </figure>

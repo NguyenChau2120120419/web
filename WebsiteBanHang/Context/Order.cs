@@ -12,12 +12,15 @@ namespace WebsiteBanHang.Context
     using System;
     using System.Collections.Generic;
     
-    public partial class User
+    public partial class Order
     {
         public int Id { get; set; }
-        public string UserName { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public string Re_type_Password { get; set; }
+        public string Name { get; set; }
+        public Nullable<int> ProductId { get; set; }
+        public Nullable<decimal> Price { get; set; }
+        public string Status { get; set; }
+        public Nullable<System.DateTime> CreatedOnUtc { get; set; }
+    
+        public virtual Product Product { get; set; }
     }
 }
